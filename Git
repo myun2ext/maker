@@ -1,7 +1,16 @@
+ifndef REMOTE
+  REMOTE = origin
+endif
+ifndef BRANCH
+  BRANCH = master
+endif
+
 init:
 	git init
 clone:
 	git clone $(URL)
+remote:
+	git remote add $(REMOTE) $(URL)
 pull:
 	git pull
 push:
