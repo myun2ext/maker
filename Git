@@ -1,0 +1,10 @@
+init:
+	git init
+clone:
+	git clone $(URL)
+pull:
+	git pull
+push:
+	git push
+branch:
+	git branch $(NAME)
